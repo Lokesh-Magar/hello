@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <blockquote>
+            <form action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+                <div class="fullname">
+                    <div class="sign">
+                        <h2>
+                            <b>
+                                SignUp
+                            </b>
+                        </h2>
+                    </div>
+                    <p><i><h4>Create an accont to view and manage students fee</h4></i></p>
+                    <div class="firstname">
+                        <label for="firstname"><b>First Name:</b> </label>
+                        <input type="text" class="firstname" id="firstname" placeholder="Enter your firstname....">
+                    </div>
+
+                    <div class="lastname">
+                        <br>
+                        <label for="lastname"><b>Last Name:</b> </label>
+                        <input type="text" class="lastname" id="lastname" placeholder="Enter your lastname....">
+                    </div>
+                </div>
+
+                <div class="email">
+                    <br>
+                    <label for="email"><b>Email:</b> </label><br>
+                    <input type="text" class="email" id="email" placeholder="Enter your email...">
+                </div>
+                
+                <div class="phone">
+                    <br>
+                    <label for="phone number"><b>Phone number:</b> </label><br>
+                    <input type="text" class="phone number" id="phone number" placeholder="Enter your phone number...">
+                </div>
+
+                <div class="password">
+                    <br>
+                    <label for="password1"><b>Password:</b> </label><br>
+                    <input type="password" class="password1" id="password1" placeholder="Enter your password..."><br>
+
+                    <br>
+                    <label for="password2"><b> Confirm password:</b> </label><br>
+                    <input type="password" class="password2" id="password2" placeholder="Enter your confirm password...">
+                </div>
+
+                <div class="signup">
+                    <br>
+                    <button >Signup</button>
+                </div>
+
+            </form>
+        </blockquote>
+    </div>
+</body>
+</html>

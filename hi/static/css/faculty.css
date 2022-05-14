@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(251, 255, 255);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.block{
+    background-color: beige;
+    padding: 15px;
+}
+
+
+.box{
+    text-align: center;
+}
+
+.faculties{
+    text-align: center;
+}
+
+.options{
+    text-align: center;
+}
+.bca{
+    width: 55%;
+}
+
+.bit{
+    width: 55%;
+}
+
+.bca:hover{
+    background-color: rgb(29, 212, 212);
+}
+
+input[type=text],select{
+    width:45%;
+}
+.addfaculty{
+    width: 50%;
+}

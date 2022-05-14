@@ -1,0 +1,85 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.box{
+    background-color:rgb(255, 253, 251);
+    padding: 1%;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 5px 5px rgb(144, 146, 148) ;
+}
+
+.wel{
+    text-align: center;   
+}
+
+.form{
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.button{
+    text-align: center;
+    border-width: 100%;
+}
+
+
+
+.forget{
+    text-align: center;
+}
+
+
+input[type=text], select{
+    width: 120%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
+}
+
+.button:hover {background-color: #fff}
+
+.button:active {
+  background-color: #fff;
+  box-shadow: 0 5px #fff;
+  transform: translateY(4px);
+} 
+
+.create{
+    text-align: center;
+    
+}
+
+.create:active{
+    box-shadow: 0 5px #fff;
+    transform: translateY(4px);
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* input[type=login] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=login]:hover {
+    background-color: #45a049;
+} */
+

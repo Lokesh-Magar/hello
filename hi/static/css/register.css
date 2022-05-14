@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(139, 170, 170);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.box.fullname.sign{
+    text-align: center;
+}
+input[type=text], select{
+    width: 120%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
+}
+
+input[type=password], select{
+    width: 120%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup{
+    text-align: center;
+    width: 120%;
+}
+
+.signup:hover{ 
+    background-color: rgb(139, 170, 170);
+}
+
+
+.signup:active {
+    background-color: rgb(139, 170, 170);
+    box-shadow: 0 5px rgb(139, 170, 170);
+    transform: translateY(4px);
+}
+
+
