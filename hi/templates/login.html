@@ -20,22 +20,22 @@
             
             <div class="form">
 
-                <form action="" method="POST">
+                <form action="{% url 'login' %}" method="POST">
                     {% csrf_token %}
                     <label for="email">Email:</label><br>
-                    <input type="text" class="email" id="email" placeholder="Enter your email...."><br>
+                    <input type="text" class="email" name="email" id="email" placeholder="Enter your email...."><br>
 
                     <label for="password">Password:</label><br>
-                    <input type="text" class="password" id="password" placeholder="Enter your password"><br>
+                    <input type="text" class="password" name="password" id="password" placeholder="Enter your password"><br>
                     <br>
                     
                     <div class="button">
-                        <button>Login</button>
+                        <button type="submit">Login</button>
                     </div>
                     <br>
 
                     <div class="create">
-                        <button><a href="register" class="link">Create Account</a></button>
+                        <button><a href="{% url 'register' %}" class="link">Create Account</a></button>
                         
                     </div>
                     <br>
